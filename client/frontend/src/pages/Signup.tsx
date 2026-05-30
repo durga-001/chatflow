@@ -42,22 +42,12 @@ export default function Signup() {
         <div className="glass rounded-3xl p-8 shadow-card">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-jade/15 border border-jade/30 flex items-center justify-center mx-auto mb-5">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="text-jade"
-              >
-                <path
-                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <div className="w-16 h-16 mx-auto mb-5">
+              <img
+                src="/favicon.svg"
+                alt="ChatFlow Logo"
+                className="w-full h-full"
+              />
             </div>
             <h1 className="font-display text-2xl font-800 text-white mb-1">
               Create account
