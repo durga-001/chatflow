@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#09090f"/>
-  <path d="M16 4L4 10l12 6 12-6-12-6zM4 22l12 6 12-6M4 16l12 6 12-6"
-    stroke="#7c6aff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c6aff"/>
+      <stop offset="100%" stop-color="#4fffb0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="64" height="64" rx="16" fill="#09090f"/>
+
+  <!-- Chat bubble -->
+  <path
+    d="M14 18C14 14.7 16.7 12 20 12H44C47.3 12 50 14.7 50 18V34C50 37.3 47.3 40 44 40H30L20 50V40H20C16.7 40 14 37.3 14 34Z"
+    fill="url(#grad)"
+  />
+
+  <!-- Message dots -->
+  <circle cx="24" cy="26" r="3" fill="#09090f"/>
+  <circle cx="32" cy="26" r="3" fill="#09090f"/>
+  <circle cx="40" cy="26" r="3" fill="#09090f"/>
 </svg>
