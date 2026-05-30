@@ -16,14 +16,19 @@
   }
 
   html {
-    @apply bg-void text-white;
+    background: #09090f;
+    color: white;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    @apply font-sans bg-void overflow-hidden;
+    font-family: "DM Sans", system-ui, sans-serif;
+    background: #09090f;
+    overflow: hidden;
+    min-height: 100vh;
+
     background-image:
       radial-gradient(
         at 20% 10%,
@@ -31,7 +36,6 @@
         transparent 55%
       ),
       radial-gradient(at 85% 85%, rgba(79, 255, 176, 0.06) 0px, transparent 55%);
-    min-height: 100vh;
   }
 
   /* Custom scrollbar */
@@ -85,7 +89,7 @@
   /* Sidebar item */
   .sidebar-item {
     @apply flex items-center gap-3 px-3 py-2.5 rounded-xl cursor-pointer
-           transition-all duration-150 group;
+         transition-all duration-150;
   }
 
   .sidebar-item:hover {
