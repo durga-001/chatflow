@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Language & environment */
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "module": "CommonJS",           /* Node.js native module system */
+    "moduleResolution": "node",
+
+    /* Output */
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    /* Type checking — strict but practical */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Interop */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* Source maps for debugging */
+    "sourceMap": true,
+    "declaration": true,            /* Emit .d.ts files — useful when backend grows */
+
+    /* Skip type-checking node_modules */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
