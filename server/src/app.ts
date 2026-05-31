@@ -4,7 +4,10 @@ import express, {
   type Response,
 } from "express";
 
+import authRoutes from "./routes/authRoutes";
 const app: Application = express();
+
+app.use("/api/auth", authRoutes);
 
 // ─── Global middleware ─────────────────────────────────────────────────────────
 app.use(express.json());
