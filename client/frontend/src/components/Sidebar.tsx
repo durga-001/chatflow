@@ -50,26 +50,16 @@ export default function Sidebar({
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2.5">
             {/* Logo */}
-            <div className="w-8 h-8 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="text-accent"
-              >
-                <path
-                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <div className="w-16 h-16 mx-auto mb-5">
+              <img
+                src="/favicon.svg"
+                alt="ChatFlow Logo"
+                className="w-full h-full"
+              />
             </div>
             <div>
               <h1 className="font-display text-sm font-700 text-white leading-none">
-                KafkaChat
+                ChatFlow
               </h1>
               <p className="text-xs text-slate-500 leading-none mt-0.5">
                 Real-time messaging

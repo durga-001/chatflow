@@ -28,22 +28,8 @@ function TypingIndicator({ name }: { name: string }) {
 function EmptyState() {
   return (
     <div className="flex-1 flex flex-col items-center justify-center text-center px-6 animate-fade-in">
-      <div className="w-20 h-20 rounded-3xl bg-accent/10 border border-accent/20 flex items-center justify-center mb-6">
-        <svg
-          width="36"
-          height="36"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-accent/60"
-        >
-          <path
-            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+      <div className="w-16 h-16 mx-auto mb-5">
+        <img src="/favicon.svg" alt="ChatFlow Logo" className="w-full h-full" />
       </div>
       <h2 className="font-display text-xl font-700 text-white mb-2">
         Select a conversation
@@ -52,8 +38,7 @@ function EmptyState() {
         Choose from your recent chats or search for a contact to start messaging
       </p>
       <div className="mt-6 flex items-center gap-2 text-xs text-slate-600">
-        <div className="w-2 h-2 rounded-full bg-jade animate-pulse-slow" />
-        Kafka event stream ready
+        <div className="w-2 h-2 rounded-full animate-pulse-slow" />
       </div>
     </div>
   );

@@ -212,14 +212,6 @@ export default function Login() {
             <div className="flex-1 h-px bg-surface-border" />
           </div>
 
-          {/* Demo hint */}
-          <div className="bg-accent/8 border border-accent/20 rounded-xl px-4 py-3 text-center mb-6">
-            <p className="text-xs text-slate-400">
-              <span className="text-accent font-medium">Demo mode</span> — enter
-              any email & password (6+ chars) to log in
-            </p>
-          </div>
-
           {/* Signup link */}
           <p className="text-center text-sm text-slate-500">
             Don't have an account?{" "}

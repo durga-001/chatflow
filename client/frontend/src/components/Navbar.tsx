@@ -12,25 +12,15 @@ export default function Navbar() {
     <nav className="flex items-center justify-between px-4 py-3 border-b border-surface-border bg-surface md:hidden">
       {/* Brand */}
       <Link to="/chat" className="flex items-center gap-2">
-        <div className="w-7 h-7 rounded-lg bg-accent/20 border border-accent/30 flex items-center justify-center">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="text-accent"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+        <div className="w-16 h-16 mx-auto mb-5">
+          <img
+            src="/favicon.svg"
+            alt="ChatFlow Logo"
+            className="w-full h-full"
+          />
         </div>
         <span className="font-display font-700 text-sm text-white">
-          KafkaChat
+          ChatFlow
         </span>
       </Link>
 
