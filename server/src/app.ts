@@ -4,10 +4,9 @@ import express, {
   type Response,
 } from "express";
 
-import authRoutes from "./routes/authRoutes";
-const app: Application = express();
+import authRouter from "./routes/auth.routes";
 
-app.use("/api/auth", authRoutes);
+const app: Application = express();
 
 // ─── Global middleware ─────────────────────────────────────────────────────────
 app.use(express.json());
@@ -22,10 +21,7 @@ app.get("/api/health", (_req: Request, res: Response) => {
   });
 });
 
-// ─── Future mounts (uncomment as you add each layer) ──────────────────────────
-// app.use('/api/auth',     authRoutes);
-// app.use('/api/users',    userRoutes);
-// app.use('/api/messages', messageRoutes);
-// app.use('/api/rooms',    roomRoutes);
+// ─── Routes ────────────────────────────────────────────────────────────────────
+app.use("/api/auth", authRouter);
 
 export default app;
